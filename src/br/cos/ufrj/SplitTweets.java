@@ -9,12 +9,9 @@ import java.util.Date;
 import java.util.Scanner;
 
 /**
- * 
- */
-
-/**
- * @author fabricio
  *
+ * @author Fabrício PEREIRA, COPPE/UFRJ/PESC
+ * @email fabriciorsf@gmail.com
  */
 public class SplitTweets {
 

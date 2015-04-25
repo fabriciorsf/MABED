@@ -1,4 +1,5 @@
 package br.cos.ufrj;
+
 import java.text.DateFormatSymbols;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -10,12 +11,9 @@ import java.util.List;
 import java.util.Locale;
 
 /**
- * 
- */
-
-/**
- * @author fabricio
  *
+ * @author Fabrício PEREIRA, COPPE/UFRJ/PESC
+ * @email fabriciorsf@gmail.com
  */
 public class Util {
 
