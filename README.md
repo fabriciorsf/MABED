@@ -27,10 +27,18 @@ Files in the Directory
 - lib/: program dependencies
 
 ------------
+Preparing Input Format from File with All Tweets (Optionally)
+------------
+
+If the program is called with the argument "-split", it expects the file in the "dataset/" directory:
+
+- <name_file.csv>.text: content all tweets, one line per tweet, each line should be formatted according to this format: "timestamp","tweet message"; and the timestamp should be formatted according to the format shown below.
+
+------------
 Input Format
 ------------
 
-The program expects two sets of files in the "input/" directory:
+If the program is called with the argument "-run", it expects two sets of files in the "input/" directory:
 
 1. <time_slice>.text: content of the messages, one line per message;
 2. <time_slice>.time: timestamp of the messages, each line maps to the message that has the same line number in <time_slice>.text. Timestamps should be formatted according to this format: YYYY-MM-DD HH:mm:ss.S (e.g. 2009-11-01 00:01:24.0)
@@ -61,3 +69,5 @@ Running the program
 - Requirements: JAVA (7+)
 
 - Execute the program MABED.jar with the following command: "java -jar MABED.jar -run". It should process the input and save the output in the "ouput/" directory.
+
+- To generate input files from a '.csv' file containing all tweets (timestamps and messages), execute the program MABED.jar with the following command: "java -jar MABED.jar -split <timeSliceLength> <name_file.csv>". It should process the file containing all tweets, and save the split files in the "input/" directory.
