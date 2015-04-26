@@ -70,4 +70,4 @@ Running the program
 
 - Execute the program MABED.jar with the following command: "java -jar MABED.jar -run". It should process the input and save the output in the "ouput/" directory.
 
-- To generate input files from a '.csv' file containing all tweets (timestamps and messages), execute the program MABED.jar with the following command: "java -jar MABED.jar -split <timeSliceLength> <name_file.csv>". It should process the file containing all tweets, and save the split files in the "input/" directory.
+- To generate input files from a '.csv' file containing all tweets (timestamps and messages), execute the program MABED.jar with the following command: "java -jar MABED.jar -split timeSliceLength name_file.csv". It should process the file containing all tweets, and save the split files in the "input/" directory.
