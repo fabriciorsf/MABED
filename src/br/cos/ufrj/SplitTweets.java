@@ -62,6 +62,10 @@ public class SplitTweets {
 				}
 				line = line.trim();
 				String[] splitLine = line.split("\",\"", 2);
+				if (splitLine.length < 2) {
+					System.err.println(String.format("Entrada vazia na linha %d!", lineCount));
+					continue;
+				}
 				String text = splitLine[1].replaceFirst("\"", "");
 				if (text.endsWith("\"")) {
 					text.substring(0, text.length() - 1);
